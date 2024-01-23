@@ -9,11 +9,12 @@
     <center>
         <h1>Registration form</h1>
 
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
 
                 {{ufo.as_p}}
                 {{pfo.as_p}}
+
             <input type="submit" value="register">
         </form>
     </center>
